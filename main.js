@@ -42,7 +42,7 @@ function send() {
 
 // Send as get to be anonymously welcomed
 function sendGet() {
-    axios.post('http://localhost:8080', {"name": field.value})
+    axios.get('http://localhost:8080', {"name": field.value})
         .then((response) => {
             // Full response object print
             console.log(response);
